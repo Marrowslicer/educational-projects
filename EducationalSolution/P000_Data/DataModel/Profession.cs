@@ -2,6 +2,7 @@
 { 
     public enum Profession
     {
+        Any,
         Actor,
         Development,
         Doctor,

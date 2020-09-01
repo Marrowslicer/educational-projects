@@ -71,6 +71,7 @@
     <Compile Include="Control\TextAndTypeSearchDemoControl.xaml.cs">
       <DependentUpon>TextAndTypeSearchDemoControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Control\ViewModel\DemoControlViewModel.cs" />
     <Compile Include="Control\ViewModel\PersonViewModel.cs" />
     <Compile Include="DemoWindow.xaml.cs">
       <DependentUpon>DemoWindow.xaml</DependentUpon>

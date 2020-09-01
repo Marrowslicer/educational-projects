@@ -13,6 +13,10 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using P000_Data.DataAccess;
+
+using P001_TreeViewTextAndTypeSearchDemo.Control.ViewModel;
+
 namespace P001_TreeViewTextAndTypeSearchDemo.Control
 {
     /// <summary>
@@ -23,6 +27,8 @@ namespace P001_TreeViewTextAndTypeSearchDemo.Control
         public TextAndTypeSearchDemoControl()
         {
             InitializeComponent();
+            var persons = Database.GetPersons();
+            DataContext = new DemoControlViewModel(persons.Select(p => new PersonViewModel(p)));
         }
     }
 }

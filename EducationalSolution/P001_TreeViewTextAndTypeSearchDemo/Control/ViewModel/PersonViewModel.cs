@@ -88,6 +88,11 @@ namespace P001_TreeViewTextAndTypeSearchDemo.Control.ViewModel
 
         public bool HasSearchProfession(Profession profession)
         {
+            if (profession == Profession.Any)
+            {
+                return true;
+            }
+
             return m_person.Profession == profession;
         }
     }
