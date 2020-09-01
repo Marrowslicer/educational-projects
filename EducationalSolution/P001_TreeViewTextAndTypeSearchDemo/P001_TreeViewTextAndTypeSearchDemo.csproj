@@ -71,6 +71,7 @@
     <Compile Include="Control\TextAndTypeSearchDemoControl.xaml.cs">
       <DependentUpon>TextAndTypeSearchDemoControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Control\ViewModel\PersonViewModel.cs" />
     <Compile Include="DemoWindow.xaml.cs">
       <DependentUpon>DemoWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -107,9 +108,11 @@
       <Project>{ac6b9557-18dc-4587-af0c-966fdb091373}</Project>
       <Name>P000_Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\P000_Framework\P000_Framework.csproj">
+      <Project>{cebcc593-3947-45e9-bb87-c4d06c749981}</Project>
+      <Name>P000_Framework</Name>
+    </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Control\ViewModel\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
