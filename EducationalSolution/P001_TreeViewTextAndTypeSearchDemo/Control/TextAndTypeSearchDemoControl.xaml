@@ -1,0 +1,62 @@
+﻿<UserControl x:Class="P001_TreeViewTextAndTypeSearchDemo.Control.TextAndTypeSearchDemoControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:converter="clr-namespace:P001_TreeViewTextAndTypeSearchDemo.Control.Converter"
+             mc:Ignorable="d" 
+             d:DesignHeight="384"
+             d:DesignWidth="576">
+    <UserControl.Resources>
+        <converter:BooleanToVisibleConverter x:Key="BooleanToVisibleConverter"/>
+    </UserControl.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <!-- region Search Box -->
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="0"
+                   Margin="5"
+                   VerticalAlignment="Center"
+                   Content="Search:"/>
+            <TextBox Grid.Column="1"
+                     Margin="5"
+                     VerticalContentAlignment="Center"/>
+            <Label Grid.Column="2"
+                   Margin="5"
+                   VerticalAlignment="Center"
+                   Content="Profession:"/>
+            <ComboBox Grid.Column="3"
+                      Margin="5"
+                      VerticalContentAlignment="Center"/>
+        </Grid>
+        <!-- endregion Search Box -->
+        
+        <!-- region TreeView -->
+        <TreeView Grid.Row="1"
+                  Margin="5,0,5,5">
+            <TreeView.ItemContainerStyle>
+                <Style TargetType="{x:Type TreeViewItem}">
+                    <Setter Property="IsExpanded" Value="True"/>
+                    <Setter Property="Visibility" Value="Visible"/>
+                </Style>
+            </TreeView.ItemContainerStyle>
+
+            <HierarchicalDataTemplate>
+                
+            </HierarchicalDataTemplate>
+        </TreeView>
+        <!-- endregion TreeView -->
+    </Grid>
+</UserControl>

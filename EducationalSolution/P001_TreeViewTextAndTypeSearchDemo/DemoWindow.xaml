@@ -1,0 +1,13 @@
+﻿<Window x:Class="P001_TreeViewTextAndTypeSearchDemo.DemoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:control="clr-namespace:P001_TreeViewTextAndTypeSearchDemo.Control"
+        Title="Search Text and Type Demo"
+        Height="384"
+        Width="576"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <control:TextAndTypeSearchDemoControl/>
+    </Grid>
+</Window>

@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace P001_TreeViewTextAndTypeSearchDemo
+namespace P001_TreeViewTextAndTypeSearchDemo.Control
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for TextAndTypeSearchDemoControl.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class TextAndTypeSearchDemoControl : UserControl
     {
-        public MainWindow()
+        public TextAndTypeSearchDemoControl()
         {
             InitializeComponent();
         }
